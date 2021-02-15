@@ -47,19 +47,3 @@ public class BPMAnalyzer: BPMAnalyzing {
         return String(cString: systemRepresentation)
     }
 }
-
-protocol BPMAnalyzerAdapter {
-    func getBPM(of songPath: String) -> Float
-}
-
-class DefaultBPMAnalyzerAdapter: BPMAnalyzerAdapter {
-    private let analyzer: SuperpoweredBPMAnalyzer
-    
-    init(analyzer: SuperpoweredBPMAnalyzer = .init()) {
-        self.analyzer = analyzer
-    }
-    
-    func getBPM(of songPath: String) -> Float {
-        return analyzer.bpm(forSongPath: songPath)
-    }
-}
