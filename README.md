@@ -1,3 +1,3 @@
 # SuperpoweredSwift
 
-A description of this package.
+Package contains Superpowered XCFramework and Swift wrapper for this framework.
