@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SuperpoweredBPMAnalyzer : NSObject
 
-- (float)bpmForLocalSong:(NSURL *)url;
+- (float)bpmForSongPath:(NSString *)path;
 
 @end
 
