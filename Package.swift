@@ -11,9 +11,13 @@ let package = Package(
         )
     ],
     targets: [
+        .binaryTarget(
+            name: "SuperpoweredFramework",
+            path: "SuperpoweredFramework.xcframework"
+        ),
         .target(
             name: "SuperpoweredSwift",
-            dependencies: []
+            dependencies: ["SuperpoweredFramework"]
         ),
         .testTarget(
             name: "SuperpoweredSwiftTests",

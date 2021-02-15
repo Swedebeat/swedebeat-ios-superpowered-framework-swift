@@ -1,0 +1,6 @@
+framework module SuperpoweredFramework {
+  umbrella header "SuperpoweredFramework.h"
+
+  export *
+  module * { export * }
+}
